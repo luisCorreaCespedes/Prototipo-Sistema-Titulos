@@ -1,15 +1,15 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import InicioSesion from './Pages/InicioSesion';
-import Principal from './Pages/Principal';
+import LogIn from './Pages/LogIn';
+import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
 
       <Routes>
-        <Route path='/' element={<InicioSesion />} />
-        <Route path='principal' element={<Principal />} />
+        <Route path='/' element={<LogIn />} />
+        <Route path='inicio' element={<Home />} />
       </Routes>
     
     </div>
