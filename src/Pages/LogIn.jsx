@@ -61,6 +61,14 @@ const navigate = useNavigate();
                         </button>
                     </div>
 
+                    <div className='pl-12 pt-8'>
+                        <div class="bg-red-100 rounded-md border-red-300 text-red-800 text-[14px] p-2" role="alert">
+                            <p class="font-bold"></p>
+                            <p>Usuario o contraseña incorrectos, favor intente nuevamente.</p>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <div className='contenedorFooter'>

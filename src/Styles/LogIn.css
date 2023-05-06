@@ -34,7 +34,7 @@
 }
 
 .seccionAcceso {
-    @apply items-start w-full flex flex-col pl-12 pt-8 pb-6;
+    @apply items-start w-full flex flex-col pl-12 pt-4 pb-2;
 }
 
 .labelFormulario {
@@ -46,11 +46,11 @@
 }
 
 .disenoFormulario {
-    @apply w-full text-[#D1D1D1] text-[14px] py-2 bg-transparent rounded-md border border-black pl-6 focus:bg-[#F5F5F5];
+    @apply w-full text-[#111111] text-[14px] py-2 bg-transparent rounded-md border border-black pl-6 focus:bg-[#F5F5F5];
 }
 
 .contenedorBoton {
-    @apply w-full flex flex-col pl-12 pt-8 items-center;
+    @apply w-full flex flex-col pl-12 pt-4 items-center;
 }
 
 .boton {
@@ -62,7 +62,7 @@
 }
 
 .textoFooter {
-    @apply text-[12px] font-normal text-[#717171];
+    @apply pl-12 text-center text-[12px] font-normal text-[#717171];
 }
 
 @tailwind utilities;
