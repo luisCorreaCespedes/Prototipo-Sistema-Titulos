@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BG_UNIVERSIDAD from '../Assets/bg.png';
 import LOGO_UNIVERSIDAD from '../Assets/logoUtem.png';
+import '../Styles/LogIn.css';
 
 function LogIn() {
 
@@ -12,62 +13,62 @@ const navigate = useNavigate();
 
     return (
 
-        <div className='w-full h-screen flex items-start'>
+        <div className='pantallaCompleta'>
             
-            <div className='relative w-2/3 h-full flex flex-col'>
+            <div className='espacioBackground'>
                 <img src={BG_UNIVERSIDAD} alt='Background Universidad' className='w-full h-full object-cover' />
             </div>
 
-            <div className='w-1/3 h-full bg-[#F5F5F5] items-start flex flex-col pl-4 pr-10 pt-10 pb-6'>
+            <div className='espacioLogin'>
 
                 <div className='flex flex-row'>
-                    <h1 className='text-left text-[28px] leading-normal text-[#060606] font-italic pl-12 pr-2'>Biblioteca Virtual de Trabajos de Titulación</h1>
+                    <h1 className='tituloPlataforma'>Biblioteca Virtual de Trabajos de Titulación</h1>
                     <img src={LOGO_UNIVERSIDAD} alt='Logo Universidad' className='h-full w-[15%] object-cover' />
                 </div>
                 
                 <div className='w-full h-4/5 flex flex-col'>
 
-                    <div className='w-full flex flex-col relative pl-12 py-2 pt-4'>
-                        <div className='w-full h-[1px] bg-[#D1D1D1]'></div>
-                        <h3 className='text-left text-[14px] text-[#717171] mb-2 pt-2'>Documentos de Trabajo de Titulación de la Escuela de Informática</h3>
+                    <div className='contenedorDescripcion'>
+                        <div className='separadorLinea'></div>
+                        <h3 className='descripcion'>Documentos de Trabajo de Titulación de la Escuela de Informática</h3>
                     </div>
 
-                    <div className='items-start w-full flex flex-col pl-12 pt-8 pb-6'>
+                    <div className='seccionAcceso'>
                         <h3 className='text-[22px] mb-2'>Acceso al Sistema</h3>
                     </div>
 
-                    <div className='items-start w-full flex flex-col pl-12 pb-4'>
-                        <h3 className='text-[16px] text-[#717171] mb-2 pb-1'>Correo Institucional</h3>
+                    <div className='labelFormulario'>
+                        <h3 className='textoFormulario'>Correo Institucional</h3>
                         <input
                             type='email'
                             placeholder='Ingrese correo'
-                            className='w-full text-[#D1D1D1] text-[14px] py-2 bg-transparent rounded-md border border-black pl-6 focus:bg-[#F5F5F5]'
+                            className='disenoFormulario'
                         />
                     </div>
 
-                    <div className='items-start w-full flex flex-col pl-12 pb-4'>
-                        <h3 className='text-[16px] text-[#717171] mb-2 pb-1'>Contraseña</h3>
+                    <div className='labelFormulario'>
+                        <h3 className='textoFormulario'>Contraseña</h3>
                         <input
                             type='password'
                             placeholder='Ingrese contraseña'
-                            className='w-full text-[#D1D1D1] text-[14px] py-2 bg-transparent rounded-md border border-black pl-6'
+                            className='disenoFormulario'
                         /> 
                     </div>
 
-                    <div className='w-full flex flex-col pl-12 pt-8 items-center'>
-                        <button onClick={(e) => handleClick()} className='w-1/3 text-white text-[14px] bg-black rounded-md p-2 text-center flex items-center justify-center'>
+                    <div className='contenedorBoton'>
+                        <button onClick={(e) => handleClick()} className='boton'>
                             Ingresar
                         </button>
                     </div>
 
                 </div>
 
-                <div className='w-full h-1/5 flex flex-col items-center justify-end'>
-                    <div className='w-full flex items-center justify-center relative pl-12 py-4'>
-                        <div className='w-full h-[1px] bg-[#A1A1A1]'></div>
+                <div className='contenedorFooter'>
+                    <div className='contenedorSeparador'>
+                        <div className='separadorLinea'></div>
                     </div>
-                    <p className='text-[12px] font-normal text-[#717171]'>Plataforma desarrollada por XXXXXX</p>
-                    <p className='text-[12px] font-normal text-[#717171]'>2023 © UTEM - Todos los Derechos Reservados</p>
+                    <p className='textoFooter'>Plataforma desarrollada por XXXXXX</p>
+                    <p className='textoFooter'>2023 © UTEM - Todos los Derechos Reservados</p>
                 </div>
 
             </div>
