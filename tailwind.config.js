@@ -10,6 +10,8 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
       'body': ['"Open Sans"'],
+      'montserrat': ['Montserrat', 'sans-serif'],
+      'sansPro': ['Source Sans Pro', 'sans-serif']
     },
   },
   plugins: [],

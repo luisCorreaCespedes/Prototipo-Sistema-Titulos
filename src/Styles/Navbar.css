@@ -1,0 +1,60 @@
+@tailwind base; 
+@tailwind components;
+
+.estiloNavbar {
+    @apply w-full bg-gray-100 text-black mb-4 shadow-sm border-b-2 border-solid border-gray-200;
+}
+
+.contenedorNavbar {
+    @apply lg:ml-6 lg:mr-6 ml-2 mr-2 mx-auto flex justify-between items-center px-1;
+}
+
+.contenedorLogo {
+    @apply flex flex-shrink-0 font-medium items-center text-gray-900 md:mb-0;
+}
+
+.imagen {
+    @apply w-14 h-full text-white p-2;
+}
+
+.textoTitulo {
+    @apply font-montserrat text-2xl text-black font-normal antialiased;
+}
+
+.navbarFull {
+    @apply hidden md:ml-auto md:flex flex-wrap items-center justify-center text-lg font-montserrat font-normal tracking-wide;
+}
+
+.botonEstilo {
+    @apply pl-1 mr-4 hover:underline decoration-[#475875];
+}
+
+.contenedorPerfilSesion {
+    @apply hidden sm:inline-flex ml-auto md:ml-0 mr-4 md:mr-0 lg:ml-8 items-center;
+}
+
+.imagenPerfil {
+    @apply h-10 w-10 rounded-3xl;
+}
+
+.botonCerrarSesion {
+    @apply pl-2 pr-1 text-xs font-montserrat font-bold;
+}
+
+.botonExpandir {
+    @apply md:hidden rounded-md active:outline-none focus:outline-none;
+}
+
+.estiloBotonExpandir {
+    @apply h-8 w-8 rounded-md text-black hover:text-gray-500;
+}
+
+.navbarComprimido {
+    @apply w-full flex flex-col md:hidden bg-[#475875] text-base text-center font-montserrat font-normal;
+}
+
+.estiloBotonComprimido {
+    @apply block px-3 border-b-2 border-solid border-gray-300 py-2 text-white hover:bg-gray-700;
+}
+
+@tailwind utilities;

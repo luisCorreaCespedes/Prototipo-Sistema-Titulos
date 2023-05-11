@@ -24,7 +24,7 @@ function LogIn() {
                 <div className='w-full h-100'>
 
                     <div className='contenedorTitulo'>
-                        <h1 className='titulo'>Biblioteca Virtual de Trabajos de Titulación</h1>
+                        <h1 className='titulo'>Biblioteca Virtual Trabajos de Titulación</h1>
                         <img className='logoUtem' src={LOGO_UNIVERSIDAD} alt='' />
                     </div>
 
@@ -45,7 +45,7 @@ function LogIn() {
                         </div>
                 
                         <div className='contenedorBoton'>
-                            <button onClick={(e) => handleClick()} type='submit' className='block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-normal rounded-md px-8 py-2 mt-10'>Ingresar</button>
+                            <button onClick={(e) => handleClick()} type='submit' className='block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-montserrat font-normal rounded-md px-8 py-2 mt-10'>Ingresar</button>
                         </div>
 
                     </form>
