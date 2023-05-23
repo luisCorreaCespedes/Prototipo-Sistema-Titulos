@@ -2,7 +2,7 @@
 @tailwind components;
 
 .estiloNavbar {
-    @apply w-full bg-gray-100 text-black mb-4 shadow-sm border-b-2 border-solid border-gray-200;
+    @apply fixed w-full bg-gray-100 text-black mb-4 shadow-sm border-b-2 border-solid border-gray-200 z-40;
 }
 
 .contenedorNavbar {
@@ -14,15 +14,15 @@
 }
 
 .imagen {
-    @apply w-14 h-full text-white p-2;
+    @apply w-12 h-full text-white p-2;
 }
 
 .textoTitulo {
-    @apply font-montserrat text-2xl text-black font-normal antialiased;
+    @apply font-montserrat text-xl text-black font-normal antialiased;
 }
 
 .navbarFull {
-    @apply hidden md:ml-auto md:flex flex-wrap items-center justify-center text-lg font-montserrat font-normal tracking-wide;
+    @apply hidden md:ml-auto md:flex flex-wrap items-center justify-center text-[16px] font-montserrat font-normal tracking-wide;
 }
 
 .botonEstilo {

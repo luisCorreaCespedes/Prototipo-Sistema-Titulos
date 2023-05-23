@@ -1,0 +1,16 @@
+@tailwind base; 
+@tailwind components;
+
+.textoExplicacion {
+    @apply px-1 font-montserrat lg:text-base text-sm text-black font-normal antialiased;
+}
+
+.contenedorDocumentos {
+    @apply pb-12 ml-2 mr-2 mx-auto;
+}
+
+.gridDocumentos {
+    @apply grid grid-flow-row auto-rows-max grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-2;
+}
+
+@tailwind utilities;

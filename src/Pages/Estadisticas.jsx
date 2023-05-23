@@ -6,7 +6,7 @@ function Estadisticas() {
     return (
         <div>
             <Navbar />
-            <h1>Aquí van las Estadísticas</h1>
+                <h1 className='pt-20'>Aquí va la Estadísticas</h1>
             <Footer />
         </div>
     )

@@ -6,7 +6,7 @@
 }
 
 .textoFooterGeneral {
-    @apply text-center text-[12px] font-montserrat font-normal text-[#E1E1E1];
+    @apply text-center text-[10px] font-montserrat font-normal text-[#E1E1E1];
 }
 
 @tailwind utilities;
