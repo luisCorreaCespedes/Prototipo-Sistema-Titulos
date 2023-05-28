@@ -6,6 +6,7 @@ import { FaHome, FaChartBar, FaCog, FaPowerOff } from 'react-icons/fa';
 import '../Styles/Navbar.css';
 
 function Navbar() {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ function Navbar() {
 
         <div className='contenedorLogo'>
           <img src={LOGO_UNIVERSIDAD} className='imagen' alt='Logo Universidad' />
-          <span className='textoTitulo'>Biblioteca Virtual</span>
+          <span className='tituloTexto'>Biblioteca Virtual</span>
         </div>
       
         <nav className='navbarFull'>

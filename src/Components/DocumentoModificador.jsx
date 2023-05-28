@@ -1,17 +1,9 @@
 import React from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
-import PDF from '../Assets/Prueba.pdf';
 import '../Styles/DocumentoTitulo.css';
 
-function DocumentoTitulo() {
-    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+function DocumentoModificador() {
     return (
-        <a href='/' className="estiloCarta">
-            <div className="estiloPortada">
-                <Document file={PDF} loading={'Cargando PDF...'} error={'OPS! No se pudo cargar el PDF.'}>
-                    <Page pageNumber={1} width={130} renderAnnotationLayer={false} renderTextLayer={false} loading={'Cargando Portada'}/>
-                </Document>
-            </div>
+        <div className="estiloCarta">
             <div className="estiloInformacion">
                 <h2 className="textoTitulo">Prototipo de Sistema Trabajos de Titulación de la Escuela de Informática</h2>
                 <h2 class="textoInfo">ESTUDIANTE: <p className='pl-2 italic'>Luis Correa</p> </h2>
@@ -19,9 +11,13 @@ function DocumentoTitulo() {
                 <h2 class="textoInfo">AÑO: <p className='pl-2 italic'>2023</p> </h2>
                 <h2 class="textoInfo">CARRERA: <p className='pl-2 italic'>Ing. Civil en Computación mención Informática</p> </h2>
                 <h2 class="textoInfo">MODALIDAD: <p className='pl-2 italic'>Desarrollo Software</p> </h2>
+                <div className='pt-4'>
+                    <button className='bg-[#3A4860] hover:bg-[#647AA0] text-white font-montserrat text-sm font-normal rounded-md px-2 py-2 mt-2'>Modificar</button>
+                    <button className='ml-4 bg-red-600 hover:bg-red-400 text-white font-montserrat text-sm font-normal rounded-md px-2 py-2 mt-2'>Eliminar</button>
+                </div>
             </div>
-        </a>
+        </div>
     )
 }
 
-export default DocumentoTitulo;
+export default DocumentoModificador;

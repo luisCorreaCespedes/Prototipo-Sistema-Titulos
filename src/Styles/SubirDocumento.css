@@ -1,0 +1,12 @@
+@tailwind base; 
+@tailwind components;
+
+.contenedorDragDrop {
+    @apply flex flex-col justify-center items-center pl-2 pr-2 pt-4;
+}
+
+.dragDrop {
+    @apply cursor-pointer font-montserrat text-sm flex flex-col content-center justify-center items-center pl-4 pr-4 pt-2 pb-2 border border-dashed rounded-lg border-gray-600 bg-gray-100 hover:border-2;
+}
+
+@tailwind utilities;

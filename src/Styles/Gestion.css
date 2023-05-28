@@ -1,0 +1,12 @@
+@tailwind base; 
+@tailwind components;
+
+.contenedorGestion {
+    @apply flex flex-row items-center justify-center text-sm font-montserrat font-normal tracking-wide;
+}
+
+.botonGestion {
+    @apply block bg-[#3A4860] hover:bg-[#647AA0] focus:bg-[#647AA0] text-white font-montserrat font-normal rounded-md px-6 py-2 mt-10 mx-2
+}
+
+@tailwind utilities;
