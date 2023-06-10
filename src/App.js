@@ -5,6 +5,7 @@ import LogIn from './Pages/LogIn';
 import Home from './Pages/Home';
 import Estadisticas from './Pages/Estadisticas';
 import Gestion from './Pages/Gestion';
+import NoEncontrado from './Pages/NoEncontrado';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='inicio' element={<Home />} />
         <Route path='estadisticas' element={<Estadisticas />} />
         <Route path='gestion' element={<Gestion />} />
+        <Route path='*' element={<NoEncontrado />} />
       </Routes>
     
     </div>

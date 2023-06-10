@@ -17,11 +17,10 @@ class Gestion extends Component {
         this.setState({ checked });
     }
 
-
-    
     render() {   
         return (
-            <div class="bg-repeat" style={{ backgroundImage: `url(${BACKGROUND})`}}>
+            <div className='bg-repeat' style={{ backgroundImage: `url(${BACKGROUND})`}}>
+
                 <Navbar />
                 
                 <div className='pt-12'>
@@ -40,6 +39,7 @@ class Gestion extends Component {
                 </div>
 
                 <Footer />
+                
             </div>
         )
     }

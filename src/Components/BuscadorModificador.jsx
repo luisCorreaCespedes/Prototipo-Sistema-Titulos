@@ -10,32 +10,29 @@ function BuscadorModificador() {
             </div>
 
             <form className='formularioGeneral'>   
-                <label for="default-search" class="labelBuscador">Buscar</label>
-                <div class="contenedorBuscador">
+                <label className='labelBuscador' for='default-search'>Buscar</label>
+                <div className='contenedorBuscador'>
                     <div className='flex flex-row'>
-                        <input type="search" id="default-search" class="font-montserrat block w-full p-2 pl-4 text-sm font-normal text-gray-800 bg-white bg-clip-padding border
-                            border-solid border-gray-500 rounded-l-lg transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:border-gray-800 focus:outline-none" 
-                            placeholder="Ingrese términos de búsqueda..." />
-                        <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:outline-none font-medium rounded-r-md text-sm px-4 py-2">Buscar</button>
+                        <input className='font-montserrat block w-full p-2 pl-4 text-sm font-normal text-gray-800 bg-white bg-clip-padding border
+                            border-solid border-gray-500 rounded-l-lg transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:border-gray-800 focus:outline-none' 
+                            placeholder='Ingrese términos de búsqueda...' type='search' id='default-search' />
+                        <button className='text-white bg-gray-700 hover:bg-gray-800 focus:outline-none font-medium rounded-r-md text-sm px-4 py-2' type='submit'>Buscar</button>
                     </div>
                 </div>
             </form>
 
             <div className='contenedorFiltros'>
-                <select id="year" class="ml-3 estilosFiltros">
+                <select className="ml-3 estilosFiltros" id="year">
                     <option value='all' selected>Por Año</option>
-                    <option value="">2010</option>
-                    <option value="">2015</option>
-                    <option value="">2018</option>
-                    <option value="">2022</option>
+                    <option value=''>2010</option>
                 </select>
-                <select id="study" class="mx-1 estilosFiltros">
+                <select className='mx-1 estilosFiltros' id='study'>
                     <option value='all' selected>Por Carrera</option>
-                    <option value="">21041</option>
+                    <option value=''>21041</option>
                 </select>
-                <select id="mode" class="mr-3 estilosFiltros">
+                <select className='mr-3 estilosFiltros' id='mode'>
                     <option value='all' selected>Por Modalidad</option>
-                    <option value="">Desarrollo Software</option>
+                    <option value=''>Desarrollo Software</option>
                 </select>   
             </div>
 

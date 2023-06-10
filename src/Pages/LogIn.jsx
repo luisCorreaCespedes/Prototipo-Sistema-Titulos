@@ -16,7 +16,7 @@ function LogIn() {
         <section className='contenedorPantalla'>
 
             <div className='contenedorBackground'>
-                <img src={BG_UNIVERSIDAD} alt='' className='backgroundUtem' />
+                <img src={BG_UNIVERSIDAD} alt='Logo Universidad' className='backgroundUtem' />
             </div>
   
             <div className='contenedorLogin'>
@@ -33,10 +33,10 @@ function LogIn() {
 
                     <h1 className='textoEnfasis'>Acceso al Sistema</h1>
             
-                    <form className='contenedorFormulario' action='#' method='POST'>
+                    <form className='contenedorFormulario'>
                         <div className='mt-4'>
                             <label className='labelCampoFormulario'>Correo Institucional</label>
-                            <input className='inputCampoFormulario' type='email' name='' id='' placeholder='Ingrese su correo' autofocus autocomplete required />
+                            <input className='inputCampoFormulario' type='email' name='' id='' placeholder='Ingrese su correo' autocomplete required />
                         </div>
                 
                         <div className='mt-4'>
@@ -45,7 +45,7 @@ function LogIn() {
                         </div>
                 
                         <div className='contenedorBoton'>
-                            <button onClick={(e) => handleClick()} type='submit' className='block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-montserrat font-normal rounded-md px-8 py-2 mt-10'>Ingresar</button>
+                            <button onClick={(e) => handleClick()} type='submit' className='block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-montserrat font-normal rounded-md px-6 py-1 mt-10'>Ingresar</button>
                         </div>
 
                     </form>

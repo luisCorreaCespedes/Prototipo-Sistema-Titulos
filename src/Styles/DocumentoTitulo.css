@@ -2,7 +2,7 @@
 @tailwind components;
 
 .estiloCarta {
-    @apply flex flex-row border-l-8 border-l-slate-700 bg-gray-100 border border-gray-400 rounded-lg shadow hover:bg-slate-200;
+    @apply flex flex-row border-l-8 border-l-slate-700 bg-white border border-gray-400 rounded-lg shadow hover:bg-slate-200;
 }
 
 .estiloCartaModificador {
@@ -10,7 +10,7 @@
 }
 
 .estiloPortada {
-    @apply cursor-pointer flex border border-r-gray-400 border-r-2;
+    @apply cursor-pointer flex border border-r-gray-400 border-r-2 bg-white;
 }
 
 .estiloInformacion {

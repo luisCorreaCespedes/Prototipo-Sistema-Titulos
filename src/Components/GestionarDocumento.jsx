@@ -11,9 +11,7 @@ function GestionarDocumento() {
                 <div className='contenedorDocumentos'>
                     <div className='gridDocumentos'>
                         <DocumentoModificador />
-                        <DocumentoModificador />
-                        <DocumentoModificador />
-                        <DocumentoModificador />
+                        
                     </div>
                 </div>
             </div>

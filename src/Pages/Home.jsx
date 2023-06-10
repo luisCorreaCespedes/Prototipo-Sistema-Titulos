@@ -9,19 +9,14 @@ import '../Styles/Home.css';
 function Home() {
     
     return (
-        <div class="bg-repeat" style={{ backgroundImage: `url(${BACKGROUND})`}}>
+        <div className='bg-repeat' style={{ backgroundImage: `url(${BACKGROUND})`}}>
 
             <Navbar />
             <BuscadorPrincipal />
 
             <div className='contenedorDocumentos'>
                 <div className='gridDocumentos'>
-                    <DocumentoTitulo />
-                    <DocumentoTitulo />
-                    <DocumentoTitulo />
-                    <DocumentoTitulo />
-                    <DocumentoTitulo />
-                   
+                    <DocumentoTitulo /> 
                 </div>
             </div>
 
