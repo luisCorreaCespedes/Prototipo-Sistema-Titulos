@@ -2,7 +2,7 @@
 @tailwind components;
 
 .contenedorPantalla {
-    @apply flex flex-col md:flex-row h-screen items-center justify-center;
+    @apply flex flex-col md:flex-row h-screen items-center justify-center bg-white;
 }
 
 .contenedorBackground {

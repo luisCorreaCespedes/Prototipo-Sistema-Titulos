@@ -10,7 +10,7 @@
 }
 
 .textoDescripcion {
-    @apply font-montserrat pb-8 font-semibold;
+    @apply font-montserrat pb-8 mx-2 font-semibold;
 }
 
 .estiloFormularioSubirDocumento {

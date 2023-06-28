@@ -1,15 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import LOGO_UNIVERSIDAD from '../Assets/logoUtem.png';
 import FOTO_PERFIL from '../Assets/perfil.jpg';
-import { FaHome, FaChartBar, FaCog, FaPowerOff } from 'react-icons/fa';
+import { FaHome, FaChartBar, FaCog, FaPowerOff, FaFile, FaUser } from 'react-icons/fa';
 import '../Styles/Navbar.css';
 
 function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    const [profileOpen, setProfileOpen] = useState(false);
+
     const navigate = useNavigate();
+
+    let menuRef = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if (!menuRef.current.contains(e.target)) {
+                setProfileOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handler);
+        return() => {
+            document.removeEventListener('mousedown', handler);
+        }
+    });
 
     function inicio() {
         navigate('/inicio');
@@ -38,18 +54,25 @@ function Navbar() {
                 </div>
         
                 <nav className='navbarFull'>
-                    <FaHome />
+                    <FaHome className='text-[22px] text-[#475875]'/>
                     <button onClick={(e) => inicio()} className='botonEstilo'>Inicio</button>
-                    <FaChartBar />
+                    <FaChartBar className='text-[22px] text-[#475875]'/>
                     <button onClick={(e) => estadisticas()} className='botonEstilo'>Estadísticas</button>
-                    <FaCog />
+                    <FaFile className='text-[22px] text-[#475875]'/>
                     <button onClick={(e) => gestion()} className='botonEstilo'>Gestión</button>
-                    <div className='contenedorPerfilSesion'>
-                        <img src={FOTO_PERFIL} className='imagenPerfil' alt='Foto Perfil'/>
-                        <button button onClick={(e) => salir()}>
-                        <p className='botonCerrarSesion'>Cerrar Sesión</p>
+                    <div className='contenedorPerfilSesion' ref={menuRef}>
+                        <button className='flex flex-row items-center' onClick={(e) => setProfileOpen(!profileOpen)}>
+                            <img src={FOTO_PERFIL} className='imagenPerfil' alt='Foto Perfil'/>
                         </button>
-                        <FaPowerOff className="text-sm justify-center" />
+                        { profileOpen &&
+                            <div className='flex flex-col profile'>
+                                <div className='flex flex-col gap-4'>
+                                    <li className='profileEstilo cursor-pointer inline-flex items-center'> <p className='pr-2'><FaUser /></p> Mi Perfil</li>
+                                    <li className='profileEstilo cursor-pointer inline-flex items-center'> <p className='pr-2'><FaCog /></p> Configuración</li>
+                                    <button className='profileEstilo cursor-pointer inline-flex items-center' onClick={(e) => salir()}> <p className='pr-2'><FaPowerOff /></p> Cerrar Sesión</button>
+                                </div>
+                            </div>
+                        }
                     </div>
                 </nav>
 
@@ -76,7 +99,7 @@ function Navbar() {
                     </button>
                     <button onClick={(e) => gestion()} className='estiloBotonComprimido'>
                         <div className='inline-flex items-center'>
-                            <p><FaCog /></p>
+                            <p><FaFile /></p>
                             <p className='pl-2'>Gestión</p>
                         </div>
                     </button>
@@ -88,7 +111,7 @@ function Navbar() {
                     </button>
                 </div>
             }
-      
+
         </div>
     )
 }

@@ -5,7 +5,7 @@ import '../Styles/Buscador.css';
 function BuscadorPrincipal() {
     return (
         <div>
-            <div className='pt-20'>
+            <div className='pt-24'>
                 <p className='textoExplicacion'>Ingresa una palabra o frase para comenzar a buscar.</p>
                 <p className='textoExplicacion'>Puedes aplicar filtros de búsqueda para encontrar un documento en particular.</p>
             </div>
