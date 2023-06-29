@@ -1,13 +1,12 @@
 // Declaración de importaciones
 import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { ref, onValue, getDocs, collection, doc, getFirestore, addDoc, deleteDoc, getDoc, setDoc } from 'firebase/firestore'
+import { getDocs, collection, getFirestore } from 'firebase/firestore'
 import appFirebase from '../Firebase/firebase';
 import Navbar from '../Components/Navbar';
 import BuscadorPrincipal from '../Components/BuscadorPrincipal';
 import BACKGROUND from '../Assets/fondoUtem.png';
 import Footer from '../Components/Footer';
-import DONE from '../Assets/done.png';
 import '../Styles/Home.css';
 import '../Styles/Buscador.css';
 import '../Styles/DocumentoTitulo.css';
