@@ -37,15 +37,6 @@ function BuscadorPrincipal() {
                 </select>   
             </div>
 
-            <div className='contenedorResultados'>
-                <container className='estilosResultados'>
-                    <h3 className='estiloTexto'>
-                        Todos los Documentos
-                    </h3>
-                    <hr className='separadorResultados' />
-                </container>
-            </div>
-
         </div>
     )
 }

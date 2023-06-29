@@ -1,12 +1,17 @@
+// Declaración de importaciones
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BG_UNIVERSIDAD from '../Assets/bg.png';
 import LOGO_UNIVERSIDAD from '../Assets/logoUtem.png';
 import '../Styles/LogIn.css';
 
+// Función principal LOGIN
 function LogIn() {
 
+    // Declaración de método useNavigate
     const navigate = useNavigate();
+
+    // Declaración de funciones de navegación
     function handleClick() {
         navigate('inicio');
     }
@@ -36,12 +41,12 @@ function LogIn() {
                     <form className='contenedorFormulario'>
                         <div className='mt-4'>
                             <label className='labelCampoFormulario'>Correo Institucional</label>
-                            <input className='inputCampoFormulario' type='email' name='' id='' placeholder='Ingrese su correo' autocomplete required />
+                            <input className='inputCampoFormulario' type='email' name='' id='email' placeholder='Ingrese su correo' autoComplete='true' required />
                         </div>
                 
                         <div className='mt-4'>
                             <label className='labelCampoFormulario'>Contraseña</label>
-                            <input className='inputCampoFormulario' type='password' name='' id='' placeholder='Ingrese contraseña' minlength='6' required />
+                            <input className='inputCampoFormulario' type='password' name='' id='pass' placeholder='Ingrese contraseña' minLength='6' required />
                         </div>
                 
                         <div className='contenedorBoton'>
@@ -57,6 +62,7 @@ function LogIn() {
                             <p className='textoFooter'>2023 © UTEM - Todos los Derechos Reservados</p>
                         </footer>
                     </div>
+                    
                 </div>
 
             </div>

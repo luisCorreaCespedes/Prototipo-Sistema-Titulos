@@ -62,7 +62,7 @@
 }
 
 .cabeceraContenedorEliminar {
-    @apply flex items-start justify-between p-3;
+    @apply flex items-start justify-between pr-3 pt-1;
 }
 
 .cuerpoEliminar {
@@ -74,6 +74,14 @@
 }
 
 .imagenAlerta {
+    @apply w-16 lg:w-24 pt-2 pb-2 lg:pt-4 lg:pb-4;
+}
+
+.imagenCargando {
+    @apply w-16 lg:w-24 pt-2 pb-2 lg:pt-4 lg:pb-4;
+}
+
+.imagenExito {
     @apply w-16 lg:w-24 pt-2 pb-2 lg:pt-4 lg:pb-4;
 }
 

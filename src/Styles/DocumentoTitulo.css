@@ -18,11 +18,11 @@
 }
 
 .textoTitulo {
-    @apply font-montserrat text-start text-xs  font-semibold text-black pb-4 subpixel-antialiased;
+    @apply font-montserrat text-start text-sm  font-bold text-black pb-4 italic subpixel-antialiased;
 }
 
 .textoInfo {
-    @apply font-montserrat flex mb-2 text-start text-xs tracking-tight text-black;
+    @apply font-montserrat flex mb-2 text-start text-xs  tracking-tight text-black font-semibold;
 }
 
 @tailwind utilities;

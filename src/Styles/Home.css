@@ -6,7 +6,7 @@
 }
 
 .contenedorDocumentos {
-    @apply pb-12 ml-2 mr-2 mx-auto;
+    @apply pt-2 pb-12 ml-4 mr-4 mx-auto;
 }
 
 .gridDocumentos {

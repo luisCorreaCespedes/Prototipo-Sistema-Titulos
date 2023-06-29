@@ -2,7 +2,7 @@
 @tailwind components;
 
 .estiloNavbar {
-    @apply fixed w-full bg-white pt-1 pb-1 text-black mb-4 shadow-sm border-b-2 border-solid border-gray-100 z-40;
+    @apply fixed w-full bg-white text-black mb-4 shadow-sm border-b-2 border-solid border-gray-100 z-40;
 }
 
 .contenedorNavbar {

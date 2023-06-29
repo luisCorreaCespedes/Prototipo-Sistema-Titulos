@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import {useDropzone} from 'react-dropzone';
 import NUBE from '../Assets/cloud-upload.png';
 import ALERTA from '../Assets/alert.png';
@@ -22,8 +22,8 @@ function DocumentoModificador() {
         <p key={file.path}>{file.path}</p>
     ));
 
-    const [showModificar, setModificar] = React.useState(false);
-    const [showAlerta, setAlerta] = React.useState(false);
+    const [showModificar, setModificar] = useState(false);
+    const [showAlerta, setAlerta] = useState(false);
     
     return (
         <div className='estiloCarta'>
@@ -106,7 +106,7 @@ function DocumentoModificador() {
                                                 Modalidad
                                             </label>
                                             <div>
-                                                <select className='selectorFormularioModificador' id='carrer'>
+                                                <select className='selectorFormularioModificador' id='mode'>
                                                 <option disabled selected>---</option>
                                                 <option>Desarrollo Software</option>
                                                 <option>Investigación Aplicada</option>
@@ -119,7 +119,7 @@ function DocumentoModificador() {
 
                                     <section className='contenedorDragDropModificador'>
                                         <div {...getRootProps({ className: 'dragDrop' })}>
-                                            <input {...getInputProps()} />
+                                            <input {...getInputProps()} id='docs'/>
                                             <img src={NUBE} alt='Cloud' className='w-8 pt-2 pb-2 lg:pt-4 lg:pb-4'/>
                                             <p className='text-xs lg:text-sm'>Selecciona un archivo</p>
                                             <aside className='pt-4 italic text-red-900 font-bold'>
