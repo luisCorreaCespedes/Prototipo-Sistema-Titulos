@@ -7,15 +7,14 @@ import DONE from '../Assets/done.png';
 import '../Styles/SubirDocumento.css';
 import '../Styles/Modales.css';
 import appFirebase from '../Firebase/firebase';
-import { useState, useCallback } from 'react';
-import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc, snapshotEqual } from 'firebase/firestore'
-import { getStorage, getDownloadURL, uploadBytes, ref, uploadFile } from 'firebase/storage';
+import { useState } from 'react';
+import { getFirestore, collection, addDoc } from 'firebase/firestore'
+import { getStorage, getDownloadURL, uploadBytes, ref } from 'firebase/storage';
 import {v4} from 'uuid';
 
 // Declaración de BDD Firebase
 const db = getFirestore(appFirebase);
 const storage = getStorage(appFirebase);
-const storageRef = ref(storage);
 
 // Función principal SUBIRDOCUMENTO
 function SubirDocumento(props) {
@@ -44,7 +43,7 @@ function SubirDocumento(props) {
     };
 
     const capturarDoc = (e) => {
-        if (e.target.files[0] == undefined) document.getElementById('fileName').innerHTML = '';
+        if (e.target.files[0] === undefined) document.getElementById('fileName').innerHTML = '';
         else {
             setFileDocument(e.target.files[0]);
             document.getElementById('fileName').innerHTML = e.target.files[0].name;
