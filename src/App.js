@@ -1,28 +1,19 @@
-import './App.css';
-import './Styles/Global.css';
-import { Route, Routes } from 'react-router-dom';
-import LogIn from './Pages/LogIn';
-import Home from './Pages/Home';
-import Estadisticas from './Pages/Estadisticas';
-import Gestion from './Pages/Gestion';
-import Visualizador from './Pages/Visualizador';
-import NoEncontrado from './Pages/NoEncontrado';
+import express from "express";
+import morgan from "morgan";
+import authRoutes from "./routes/auth.routes.js";
+import docsRoutes from "./routes/docs.routes.js";
+import cookieParser from "cookie-parser";
+import cors from "cors";
 
-function App() {
-  return (
-    <div className='App'>
+const app = express();
+app.use(cors({
+    origin: "http://localhost:5173",
+    credentials: true
+}));
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(cookieParser());
+app.use("/api", authRoutes);
+app.use("/api", docsRoutes);
 
-      <Routes>
-        <Route path='/' element={<LogIn />} />
-        <Route path='inicio' element={<Home />} />
-        <Route path='estadisticas' element={<Estadisticas />} />
-        <Route path='gestion' element={<Gestion />} />
-        <Route path='visualizador' element={<Visualizador/>} />
-        <Route path='*' element={<NoEncontrado />} />
-      </Routes>
-    
-    </div>
-  );
-}
-
-export default App;
+export default app;
